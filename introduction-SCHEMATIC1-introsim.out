@@ -1,0 +1,72 @@
+
+**** 02/10/26 12:59:35 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-introsim"  [ D:\krishnendu147\introduction-SCHEMATIC1-introsim.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "introduction-SCHEMATIC1-introsim.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 2ms 0 1u 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\introduction-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING introduction-SCHEMATIC1.net ****
+* source INTRODUCTION
+R_R1         N00105 N00159  100  
+L_L1         N00159 0  25mH  
+V_V1         N00105 0  
++PULSE 0 10 0 1n 1n 0.5m 1m
+
+**** RESUMING introduction-SCHEMATIC1-introsim.sim.cir ****
+.END
+
+**** 02/10/26 12:59:35 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-introsim"  [ D:\krishnendu147\introduction-SCHEMATIC1-introsim.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00105)    0.0000 (N00159)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .05
+

@@ -1,0 +1,42 @@
+
+**** 02/10/26 12:32:00 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-introsim"  [ D:\krishnendu147\introduction-SCHEMATIC1-introsim.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "introduction-SCHEMATIC1-introsim.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 2ms 0 1u 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\introduction-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING introduction-SCHEMATIC1.net ****
+* source INTRODUCTION
+R_R1         N00105 N00159  100  
+L_L1         N00159 N00186  25mH  
+V_V1         N00105 N00186  
++PULSE 0 10 0 1n 1n 0.5m 1m
+
+**** RESUMING introduction-SCHEMATIC1-introsim.sim.cir ****
+.END
+
+ERROR -- Node N00105 is floating
+ERROR -- Node N00159 is floating
+ERROR -- Node N00186 is floating

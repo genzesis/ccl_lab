@@ -1,0 +1,5 @@
+* source INTRODUCTION
+R_R1         N00105 N00159  100  
+L_L1         N00159 0  25mH  
+V_V1         N00105 0  
++PULSE 0 10 0 1n 1n 0.5m 1m
